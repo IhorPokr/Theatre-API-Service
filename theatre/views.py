@@ -1,5 +1,4 @@
 from django.db.models import F, Count
-from django.shortcuts import render
 from rest_framework import viewsets, mixins, status
 from rest_framework.decorators import action
 from rest_framework.pagination import PageNumberPagination
@@ -11,11 +10,9 @@ from theatre.models import (
     Genre,
     TheatreHall,
     Play,
-    Ticket,
     Reservation,
     Performance
 )
-
 from theatre.serializers import (
     GenreSerializer,
     ActorSerializer,
@@ -30,7 +27,6 @@ from theatre.serializers import (
     ReservationListSerializer,
     PlayImageSerializer,
 )
-
 from .permissions import IsAdminOrIfAuthenticatedReadOnly
 
 

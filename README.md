@@ -14,8 +14,17 @@ Theatre-API-service provides endpoints for managing theatre service.
    ```
    git clone https://github.com/IhorPokr/Theatre-API-Service.git
    ```
+2. Sett Up Virtual Environment and Install Requirements
+If you are using PyCharm - it may propose you to automatically create venv for your project and install requirements
+in it, but if not:
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate (on Windows)
+   source venv/bin/activate (on macOS)
+   pip install -r requirements.txt
+   ```
 
-2. Create .env file and define environmental variables using .env.sample as an example:
+3. Create .env file and define environmental variables using .env.sample as an example:
    ```
    SECRET_key=" your django secret key "
    POSTGRES_HOST= your db host
@@ -25,12 +34,17 @@ Theatre-API-service provides endpoints for managing theatre service.
    
    ```
 
-3. Run command:
+   ```
+   python manage.py migrate
+   python manage.py runserver # starts Django Server
+   ```
+
+4. Run command:
    ```
    docker-compose up --build
    ```
-4. App will be available at: ```127.0.0.1:8000```
-5. Login using next credentials:
+5. App will be available at: ```127.0.0.1:8000```
+6. Login using next credentials:
    ```
    test@gmail.com
    qwezxc123
