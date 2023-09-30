@@ -13,6 +13,7 @@ Theatre-API-service provides endpoints for managing theatre service.
 
    ```
    git clone https://github.com/IhorPokr/Theatre-API-Service.git
+   cd Theatre-API-Service
    ```
 2. Sett Up Virtual Environment and Install Requirements
 If you are using PyCharm - it may propose you to automatically create venv for your project and install requirements
